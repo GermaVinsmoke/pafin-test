@@ -31,9 +31,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{base_url}}/auth/signup",
+							"raw": "{{api_base_url}}/auth/signup",
 							"host": [
-								"{{base_url}}"
+								"{{api_base_url}}"
 							],
 							"path": [
 								"auth",
@@ -55,7 +55,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"name\": \"Test user\",\n    \"email\": \"test+1@test.com\",\n    \"password\": \"Test@123\",\n    \"confirmPassword\": \"Test@123\"\n}",
+									"raw": "{\n    \"name\": \"Test user\",\n    \"email\": \"test@test.com\",\n    \"password\": \"Test@123\",\n    \"confirmPassword\": \"Test@123\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -63,12 +63,10 @@
 									}
 								},
 								"url": {
-									"raw": "http://localhost:8001/auth/signup",
-									"protocol": "http",
+									"raw": "{{api_base_url}}/auth/signup",
 									"host": [
-										"localhost"
+										"{{api_base_url}}"
 									],
-									"port": "8001",
 									"path": [
 										"auth",
 										"signup"
@@ -101,9 +99,9 @@
 									}
 								},
 								"url": {
-									"raw": "{{base_url}}/auth/signup",
+									"raw": "{{api_base_url}}/auth/signup",
 									"host": [
-										"{{base_url}}"
+										"{{api_base_url}}"
 									],
 									"path": [
 										"auth",
@@ -137,9 +135,9 @@
 									}
 								},
 								"url": {
-									"raw": "{{base_url}}/auth/signup",
+									"raw": "{{api_base_url}}/auth/signup",
 									"host": [
-										"{{base_url}}"
+										"{{api_base_url}}"
 									],
 									"path": [
 										"auth",
@@ -173,9 +171,9 @@
 									}
 								},
 								"url": {
-									"raw": "{{base_url}}/auth/signup",
+									"raw": "{{api_base_url}}/auth/signup",
 									"host": [
-										"{{base_url}}"
+										"{{api_base_url}}"
 									],
 									"path": [
 										"auth",
@@ -209,9 +207,9 @@
 									}
 								},
 								"url": {
-									"raw": "{{base_url}}/auth/signup",
+									"raw": "{{api_base_url}}/auth/signup",
 									"host": [
-										"{{base_url}}"
+										"{{api_base_url}}"
 									],
 									"path": [
 										"auth",
@@ -241,9 +239,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{base_url}}/auth/login",
+							"raw": "{{api_base_url}}/auth/login",
 							"host": [
-								"{{base_url}}"
+								"{{api_base_url}}"
 							],
 							"path": [
 								"auth",
@@ -267,12 +265,10 @@
 									}
 								},
 								"url": {
-									"raw": "http://localhost:8001/auth/login",
-									"protocol": "http",
+									"raw": "{{api_base_url}}/auth/login",
 									"host": [
-										"localhost"
+										"{{api_base_url}}"
 									],
-									"port": "8001",
 									"path": [
 										"auth",
 										"login"
@@ -299,9 +295,9 @@
 									}
 								},
 								"url": {
-									"raw": "{{base_url}}/auth/login",
+									"raw": "{{api_base_url}}/auth/login",
 									"host": [
-										"{{base_url}}"
+										"{{api_base_url}}"
 									],
 									"path": [
 										"auth",
@@ -331,7 +327,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQ0ZmU0N2FmLTllOGUtNDNkYS05MTFmLWNhZWE3ZTJhNDc1OCIsIm5hbWUiOiJUZXN0IHVzZXIiLCJlbWFpbCI6InRlc3RAdGVzdC5jb20iLCJpYXQiOjE2OTA5OTUzMzUsImV4cCI6MTY5MDk5ODkzNX0.AlrdZNxcZC7ntbLcI2IC1pnUe-amSPg-FpWMoZfUqjA",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjFiMWM0Y2Y5LWYxYTMtNDJlMy05MmFmLWFiMzc0NTk3NjY0ZSIsIm5hbWUiOiJUZXN0IHVzZXIiLCJlbWFpbCI6InRlc3RAdGVzdC5jb20iLCJpYXQiOjE2OTEwMDAxMjcsImV4cCI6MTY5MTAwMzcyN30.MsMlNnlu4MSN7u2v0K6bSBNrOyGpKFx5uU5Wo60YR-A",
 								"type": "text"
 							}
 						],
@@ -345,9 +341,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{base_url}}/user",
+							"raw": "{{api_base_url}}/user",
 							"host": [
-								"{{base_url}}"
+								"{{api_base_url}}"
 							],
 							"path": [
 								"user"
@@ -363,18 +359,18 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQ0ZmU0N2FmLTllOGUtNDNkYS05MTFmLWNhZWE3ZTJhNDc1OCIsIm5hbWUiOiJUZXN0IHVzZXIiLCJlbWFpbCI6InRlc3RAdGVzdC5jb20iLCJpYXQiOjE2OTA5OTUzMzUsImV4cCI6MTY5MDk5ODkzNX0.AlrdZNxcZC7ntbLcI2IC1pnUe-amSPg-FpWMoZfUqjA",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjFiMWM0Y2Y5LWYxYTMtNDJlMy05MmFmLWFiMzc0NTk3NjY0ZSIsIm5hbWUiOiJUZXN0IHVzZXIiLCJlbWFpbCI6InRlc3RAdGVzdC5jb20iLCJpYXQiOjE2OTEwMDAxMjcsImV4cCI6MTY5MTAwMzcyN30.MsMlNnlu4MSN7u2v0K6bSBNrOyGpKFx5uU5Wo60YR-A",
 								"type": "text"
 							}
 						],
 						"url": {
-							"raw": "{{base_url}}/user/44fe47af-9e8e-43da-911f-caea7e2a4758",
+							"raw": "{{api_base_url}}/user/1b1c4cf9-f1a3-42e3-92af-ab374597664e",
 							"host": [
-								"{{base_url}}"
+								"{{api_base_url}}"
 							],
 							"path": [
 								"user",
-								"44fe47af-9e8e-43da-911f-caea7e2a4758"
+								"1b1c4cf9-f1a3-42e3-92af-ab374597664e"
 							]
 						}
 					},
@@ -387,7 +383,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQ0ZmU0N2FmLTllOGUtNDNkYS05MTFmLWNhZWE3ZTJhNDc1OCIsIm5hbWUiOiJUZXN0IHVzZXIiLCJlbWFpbCI6InRlc3RAdGVzdC5jb20iLCJpYXQiOjE2OTA5OTUzMzUsImV4cCI6MTY5MDk5ODkzNX0.AlrdZNxcZC7ntbLcI2IC1pnUe-amSPg-FpWMoZfUqjA",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjFiMWM0Y2Y5LWYxYTMtNDJlMy05MmFmLWFiMzc0NTk3NjY0ZSIsIm5hbWUiOiJUZXN0IHVzZXIiLCJlbWFpbCI6InRlc3RAdGVzdC5jb20iLCJpYXQiOjE2OTEwMDAxMjcsImV4cCI6MTY5MTAwMzcyN30.MsMlNnlu4MSN7u2v0K6bSBNrOyGpKFx5uU5Wo60YR-A",
 								"type": "text"
 							}
 						],
@@ -401,13 +397,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{base_url}}/user/44fe47af-9e8e-43da-911f-caea7e2a4758",
+							"raw": "{{api_base_url}}/user/1b1c4cf9-f1a3-42e3-92af-ab374597664e",
 							"host": [
-								"{{base_url}}"
+								"{{api_base_url}}"
 							],
 							"path": [
 								"user",
-								"44fe47af-9e8e-43da-911f-caea7e2a4758"
+								"1b1c4cf9-f1a3-42e3-92af-ab374597664e"
 							]
 						}
 					},
@@ -420,7 +416,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQ0ZmU0N2FmLTllOGUtNDNkYS05MTFmLWNhZWE3ZTJhNDc1OCIsIm5hbWUiOiJUZXN0IHVzZXIiLCJlbWFpbCI6InRlc3RAdGVzdC5jb20iLCJpYXQiOjE2OTA5OTUzMzUsImV4cCI6MTY5MDk5ODkzNX0.AlrdZNxcZC7ntbLcI2IC1pnUe-amSPg-FpWMoZfUqjA",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjFiMWM0Y2Y5LWYxYTMtNDJlMy05MmFmLWFiMzc0NTk3NjY0ZSIsIm5hbWUiOiJUZXN0IHVzZXIiLCJlbWFpbCI6InRlc3RAdGVzdC5jb20iLCJpYXQiOjE2OTEwMDAxMjcsImV4cCI6MTY5MTAwMzcyN30.MsMlNnlu4MSN7u2v0K6bSBNrOyGpKFx5uU5Wo60YR-A",
 								"type": "text"
 							}
 						],
@@ -429,13 +425,13 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "{{base_url}}/user/44fe47af-9e8e-43da-911f-caea7e2a4758",
+							"raw": "{{api_base_url}}/user/1b1c4cf9-f1a3-42e3-92af-ab374597664e",
 							"host": [
-								"{{base_url}}"
+								"{{api_base_url}}"
 							],
 							"path": [
 								"user",
-								"44fe47af-9e8e-43da-911f-caea7e2a4758"
+								"1b1c4cf9-f1a3-42e3-92af-ab374597664e"
 							]
 						}
 					},

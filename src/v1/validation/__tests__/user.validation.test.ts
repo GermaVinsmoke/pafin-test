@@ -29,7 +29,9 @@ describe("user.validation", () => {
 
     for (const payload of payloads) {
       const id = payload.params.id;
-      const response = await request(app).put(`/user/${id}`).send(payload.body);
+      const response = await request(app)
+        .put(`/v1/user/${id}`)
+        .send(payload.body);
 
       expect(response.status).toBe(payload.errorCode);
       expect(response.body.error).toBe(payload.error);

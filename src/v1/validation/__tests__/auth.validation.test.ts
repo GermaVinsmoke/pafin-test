@@ -34,7 +34,7 @@ describe("auth.validation", () => {
 
     for (const payload of payloads) {
       const response = await request(app)
-        .post("/auth/signup")
+        .post("/v1/auth/signup")
         .send(payload.body);
 
       expect(response.status).toBe(400);

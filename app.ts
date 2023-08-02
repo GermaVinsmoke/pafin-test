@@ -10,8 +10,8 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.use("/auth", authRouter);
-app.use("/user", userRouter);
+app.use("/v1/auth", authRouter);
+app.use("/v1/user", userRouter);
 
 app.use(errorLogger);
 app.use(errorResponder);
